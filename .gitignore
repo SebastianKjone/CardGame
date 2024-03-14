@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 target/
 pom.xml.tag
 pom.xml.releaseBackup
@@ -16,3 +17,14 @@ buildNumber.properties
 .project
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
+=======
+# Files and folders to be ignored by git
+
+# IntelliJ specific files and folders
+.idea/
+*.iml
+out/
+
+# Maven
+target/
+>>>>>>> master
