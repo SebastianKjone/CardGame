@@ -10,6 +10,12 @@ package ntnu.idatg2003.oblig3;
  */
 public class PlayingCard {
 
+  public static void main(String[] args) {
+    DeckOfCards deckOfCards = new DeckOfCards();
+    deckOfCards.deckBuilder();
+    deckOfCards.dealHand(1);
+    deckOfCards.getDeck();
+  }
   private final char suit; // 'S'=spade, 'H'=heart, 'D'=diamonds, 'C'=clubs
   private final int face; // a number between 1 and 13
 
