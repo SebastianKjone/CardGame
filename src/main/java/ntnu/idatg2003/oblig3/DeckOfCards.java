@@ -20,29 +20,24 @@ public class DeckOfCards {
         deck.add(new PlayingCard(suit, face));
       }
     }
+    System.out.println("Deck has been built, " + deck.size() + " cards");
+
   }
 
-  protected void dealHand(int n){
-    for (int i = 0; i < n; i++) {
-      int randomCardNumber = new Random().nextInt(deck.size());
-      if(!checkIfCardIsInDeck(randomCardNumber)) {
-        i--;
-      }
-    }
+  protected PlayingCard findMatchingPlayingCard(int randomCardNumber) {
+    deck.stream().
+        filter(playingCard -> playingCard.
+            getFace() == randomCardNumber);
+    if (deck.contains(randomCardNumber)) {
+      System.out.println(deck.get(randomCardNumber).getAsString());
+    }  return deck.get(randomCardNumber);
   }
 
-  private boolean checkIfCardIsInDeck(int randomCardNumber) {
-    boolean cardInDeckFlag = false;
-    if (deck.contains(randomCardNumber)){
-      deck.remove(randomCardNumber);
-      cardInDeckFlag = true;
-    } return cardInDeckFlag;
-  }
+
 
 
   protected ArrayList<PlayingCard> getDeck() {
     return deck;
   }
-
 
 }
