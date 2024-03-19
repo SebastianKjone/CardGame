@@ -2,7 +2,7 @@ package ntnu.idatg2003.oblig3;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.AfterEach;
+import ntnu.idatg2003.oblig3.engine.DeckOfCards;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

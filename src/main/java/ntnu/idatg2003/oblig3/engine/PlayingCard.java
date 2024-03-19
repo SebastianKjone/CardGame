@@ -1,4 +1,4 @@
-package ntnu.idatg2003.oblig3;
+package ntnu.idatg2003.oblig3.engine;
 
 /**
  * Represents a playing card. A playing card has a number (face) between

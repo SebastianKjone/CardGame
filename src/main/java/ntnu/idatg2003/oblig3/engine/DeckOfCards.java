@@ -1,7 +1,5 @@
-package ntnu.idatg2003.oblig3;
-import java.lang.Object;
+package ntnu.idatg2003.oblig3.engine;
 import java.util.ArrayList;
-import java.util.Random;
 
 public class DeckOfCards {
 
@@ -34,9 +32,14 @@ public class DeckOfCards {
   }
 
 
+  public void sendSuitToDealer(PlayingCard card) {
+    card.getSuit();
+  }
+  public void removeDealtCards(int randomCardNumber) {
+    deck.remove(randomCardNumber);
+  }
 
-
-  protected ArrayList<PlayingCard> getDeck() {
+  public ArrayList<PlayingCard> getDeck() {
     return deck;
   }
 
